@@ -1,0 +1,35 @@
+error.idgnr.not.supported=[IDGeneration Service] Current service doesn't support to generate next {0} id.
+error.idgnr.tableid.notallocate.id=[IDGeneration Service] Unable to allocate a block of Ids. no row with table_name='{0}' exists in the {1} table.
+error.idgnr.null.id=[IDGeneration Service] Although too many retries, unable to allocate a block of Ids.
+error.idgnr.get.connection=[IDGeneration Service] We can't get a connection. So, unable to allocate a block of Ids.
+error.idgnr.sequenceid.notallocate.id=[IDGeneration Service] Unable to allocate a block of Ids. Query for Id did not return a value.
+error.idgnr.greater.maxid=[IDGeneration Service] Unable to provide an id.   No more Ids are available, the maximum {0} value has been reached.
+error.idgnr.invalid.parameter=address in the configuration should be a valid IP or MAC Address
+warn.idgnr.update.idblock="[IDGeneration Service] Encountered an exception attempting to update the {0} table.  May be a transaction confict. Try again. 
+debug.idgnr.allocate.idblock=[IDGeneration Service] Allocating a new block of {0} ids for key_table {1}.
+debug.idgnr.updated.norows=[IDGeneration Service] Update resulted in no rows being changed.
+debug.idgnr.sequenceid.query=[IDGeneration Service] Requesting an Id using query: {0}
+
+
+error.properties.refresh.files=[Properties Service] Fail to refresh file properties [{0}].
+error.properties.refresh.files.reason=[Properties Service] Some property files doesn't exist or there are wrong definitions in property files.
+error.properties.refresh.files.solution=[Properties Service] Please, check number of propery files and review property definitions.
+error.properties.check.essential=[Properties Service] key is essential attribute in a <element>.
+error.properties.check.essential.reason=[Properties Service] key of <element> tag doesn't have a value or doesn't be defined.  
+error.properties.check.essential.solution=[Properties Service] You have to define a key in <element> tag. Please, check the configuration file.
+error.properties.initialize=[Properties Service] Fail to initialize a Properties Service.
+error.properties.initialize.reason=[Properties Service] There are something wrong definitions in a service configuration file or property files.
+error.properties.initialize.solution=[Properties Service] Please, check property file content or service configuration file.
+debug.properties.filename=[Properties Service] Property file is a [{0}]. Encoding Type of the file is {1}.
+debug.properties.property=[Properties Service] Property which Key \= {0}, value \= {1} is defined in this configuration file.
+
+
+error.security.login=Login failure.
+error.security.login.solution=Login Failure. Please, register your login id into egovframework.
+error.security.login.reason=Login Failure. Your login id doesn't exist. 
+error.security.check.userid=Error reading user database.
+error.security.check.userid.solution=Ask administrator.
+error.security.check.userid.reason=DB may be shutdowned.
+debug.security.data.userid=[DBAuthenticator] userid is {0}
+debug.security.data.password=[DBAuthenticator] password is {0}
+info.security.data.sql=[DBAuthenticator] SQL Query is {0}
